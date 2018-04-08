@@ -63,6 +63,15 @@ if not exist %TARGETDIR%\acat_gestures_dll.dll copy .\%SOURCEDIR%\External\*.* %
 if not exist %INSTALLDIR%\shape_predictor_68_face_landmarks.dat copy .\%SOURCEDIR%\External\shape_predictor_68_face_landmarks.dat %INSTALLDIR%
 
 :Next
+
+rem ------------------------------------------------
+@echo Deploying Serial Actuator DLL's
+rem ------------------------------------------------
+set SOURCEDIR=Extensions\Default\Actuators\SerialActuator
+set TARGETDIR=%INSTALLDIR%\%SOURCEDIR%
+if not exist %TARGETDIR% mkdir %TARGETDIR%
+copy .\%SOURCEDIR%\bin\%CONFIG%\SerialActuator.dll %TARGETDIR%
+
 rem ------------------------------------------------
 @echo Deploying TTSEngine dlls
 rem ------------------------------------------------

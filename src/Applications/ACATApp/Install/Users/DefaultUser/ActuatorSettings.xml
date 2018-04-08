@@ -107,6 +107,23 @@
     </ActuatorSetting>
     <ActuatorSetting>
       <Enabled>true</Enabled>
+      <Id>fe3de70b-8084-46c1-bab1-905b215c773a</Id>
+      <Name>Serial Actuator</Name>
+      <SwitchSettings>
+        <SwitchSetting>
+          <Actuate>true</Actuate>
+          <BeepFile>beep.wav</BeepFile>
+          <Command>@Trigger</Command>
+          <Description>Serial Input Reader</Description>
+          <Enabled>true</Enabled>
+          <MinHoldTime>@MinActuationHoldTime</MinHoldTime>
+          <Name>SerSwi</Name>
+          <Source>SerSwi</Source>
+        </SwitchSetting>
+      </SwitchSettings>
+    </ActuatorSetting>
+    <ActuatorSetting>
+      <Enabled>true</Enabled>
       <Id>cbef136b-66ef-40e4-bf8f-46fa2fb7d689</Id>
       <Name>BlinkSwitch Actuator</Name>
       <SwitchSettings>
